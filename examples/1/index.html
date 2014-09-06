@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <title>HTML Imports Content - Examples - 1</title>
+  <link rel="import" replace="#header" href="header.html">
+  <link rel="import" replace="#comments" href="comments.html">
+</head>
+<body>
+  <div id="header">
+    loading...
+  </div>
+  <main>
+    <h2>This is page content.</h2>
+  </main>
+  <div id="comments">
+    loading...
+  </div>
+  <link rel="import" inline href="footer.html">
+
+  <script src="../../html-imports-content.js"></script>
+  <script>
+    window.importsContent({
+      // mock timeout
+      timeout: 1000
+    });
+  </script>
+</body>
+</html>
