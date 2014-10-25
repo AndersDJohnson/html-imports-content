@@ -3,8 +3,9 @@
 HTML Imports with content inlining, or replacing by selector.
 
 ## Features
-* Declarative definition to encourage future search engine support.
-* Improve speed of web by allowing site boilerplate HTML to be cached by client browsers independently of page-specific content. Similar in concept to Edge Side Includes.
+* Enabled simple client-side templating for page composition, with support for lazy loading.
+* Improve speed of web by allowing different HTML snippets to be cached independently. Similar in concept to Edge Side Includes.
+* Declarative definition to encourage future search native browser and search engine support.
 
 ## Use
 
