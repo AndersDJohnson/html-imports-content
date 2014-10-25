@@ -3,9 +3,9 @@
 HTML Imports with content inlining, or replacing by selector.
 
 ## Features
-* Enabled simple client-side templating for page composition, with support for lazy loading.
+* Enables simple client-side page composition, with support for lazy loading.
 * Improve speed of web by allowing different HTML snippets to be cached independently. Similar in concept to Edge Side Includes.
-* Declarative definition to encourage future search native browser and search engine support.
+* Declarative definition to encourage future native browser implementation and search engine support.
 
 ## Use
 
@@ -14,6 +14,7 @@ HTML Imports with content inlining, or replacing by selector.
 <!-- ... -->
 <script>
 // Later, once DOM content loaded...
+// this will process all content imports in the DOM so far.
 window.importsContent();
 </script>
 ```
@@ -30,6 +31,17 @@ Replaces element(s) matching CSS selector specified in `replace` attribute with 
 
 ```html
 <link rel="import" replace="#header" href="header.html">
+```
+
+### Manual
+
+```js
+var link = document.createElement('link');
+link.rel = "import";
+link.href = "header.html";
+link.setAttribute('inline', '');
+document.body.appendChild(link);
+window.importContent(link);
 ```
 
 ## Examples
