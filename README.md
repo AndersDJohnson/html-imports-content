@@ -3,9 +3,9 @@
 HTML Imports with content inlining, or replacing by selector.
 
 ## Features
-* Enabled simple client-side templating for page composition, with support for lazy loading.
+* Enables simple client-side page composition, with support for lazy loading.
 * Improve speed of web by allowing different HTML snippets to be cached independently. Similar in concept to Edge Side Includes.
-* Declarative definition to encourage future search native browser and search engine support.
+* Declarative definition to encourage future native browser implementation and search engine support.
 
 ## Use
 
