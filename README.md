@@ -18,11 +18,15 @@ window.importsContent();
 ```
 
 ### Inline
+Inserts loaded HTML inline (at the same location as the statement):
+
 ```html
 <link rel="import" inline href="header.html">
 ```
 
 ### Replace
+Replaces element(s) matching CSS selector specified in `replace` attribute with loaded HTML:
+
 ```html
 <link rel="import" replace="#header" href="header.html">
 ```
