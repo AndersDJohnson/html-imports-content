@@ -4,12 +4,16 @@
   var forEach = Array.prototype.forEach;
 
   var insertNodesBefore = function (nodes, afterNode) {
-    var node = nodes[nodes.length - 1];
-    while (node) {
+    if (! nodes) return;
+    if (! afterNode) return;
+    var node;
+    var index = nodes.length - 1;
+    while (index >= 0) {
+      node = nodes[index];
       var cloned = node.cloneNode(true);
       afterNode.parentNode.insertBefore(cloned, afterNode);
-      node = node.previousSibling;
       afterNode = cloned;
+      --index;
     }
   };
 
