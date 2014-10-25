@@ -9,7 +9,7 @@ HTML Imports with content inlining, or replacing by selector.
 ## Use
 
 ```html
-<script src="../../html-imports-content.js"></script>
+<script src="html-imports-content.js"></script>
 <!-- ... -->
 <script>
 // Later, once DOM content loaded...
