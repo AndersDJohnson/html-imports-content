@@ -56,3 +56,5 @@ window.importContent(link);
 ## Polyfills
 * [Polymer](https://github.com/polymer/HTMLImports)
 
+## Alternatives
+  * [Matthew-Dove/Inject](https://github.com/Matthew-Dove/Inject)
