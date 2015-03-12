@@ -12,6 +12,25 @@
 }(this, function () {
 
   var forEach = Array.prototype.forEach;
+  var toString = Object.prototype.toString;
+
+
+  var isArray = function (value) {
+    return toString.call(value) === '[object Array]';
+  };
+
+
+  /**
+   * Returns true if it is a DOM element
+   * https://stackoverflow.com/a/384380/851135
+   */
+  var isElement = function (o){
+    return (
+      typeof HTMLElement === "object" ? o instanceof HTMLElement : //DOM2
+      o && typeof o === "object" && o !== null && o.nodeType === 1 && typeof o.nodeName==="string"
+    );
+  };
+
 
   var insertNodesBefore = function (nodes, afterNode) {
     if (! nodes) return;
@@ -26,6 +45,7 @@
       --index;
     }
   };
+
 
   var removeNode = function (node) {
     node.parentNode.removeChild(node);
@@ -72,19 +92,35 @@
 
   };
 
+
+  var findElements = function () {
+    return document.querySelectorAll('link[rel="import"]')
+  };
+
+
   var importsContent = function (options) {
+
+    if (isElement(options)) {
+      options = {
+        elements: [options]
+      };
+    }
+
+    if (isArray(options)) {
+      options = {
+        elements: options
+      };
+    }
 
     options = options || {};
     options.timeout = options.timeout || null;
 
-    var importNodes = document.querySelectorAll('link[rel="import"]');
+    var importNodes = options.elements || findElements();
 
     forEach.call(importNodes, function (importNode) {
       importContent(importNode, options);
     });
   };
-
-  importsContent.importContent = importContent;
 
   return importsContent;
 }));

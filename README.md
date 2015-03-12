@@ -41,8 +41,13 @@ link.rel = "import";
 link.href = "header.html";
 link.setAttribute('inline', '');
 document.body.appendChild(link);
-window.importContent(link);
+
+window.importsContent(link);
+
+// or multiple:
+// window.importsContent( [ link, link2, ... ] );
 ```
+
 
 ## Examples
 * [1](https://rawgithub.com/AndersDJohnson/html-imports-content/master/examples/1/index.html)
