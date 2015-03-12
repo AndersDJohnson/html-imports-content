@@ -1,5 +1,15 @@
-(function (out) {
-
+(function (root, factory) {
+  var name = 'importsContent';
+  if (typeof define === 'function' && define.amd) {
+    define([], function () {
+        return (root[name] = factory());
+    });
+  } else if (typeof exports === 'object') {
+    module.exports = factory();
+  } else {
+    root[name] = factory();
+  }
+}(this, function () {
 
   var forEach = Array.prototype.forEach;
 
@@ -74,8 +84,7 @@
     });
   };
 
-  out.importContent = importContent;
-  out.importsContent = importsContent;
+  importsContent.importContent = importContent;
 
-  return out;
-})(this);
+  return importsContent;
+}));
