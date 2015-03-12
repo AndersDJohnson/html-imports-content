@@ -7,6 +7,18 @@
 * Improve speed of web by allowing different HTML snippets to be cached independently. Similar in concept to Edge Side Includes.
 * Declarative definition to encourage future native browser implementation and search engine support.
 
+## Install
+
+### Bower
+```
+bower install --save html-imports-content
+```
+
+### npm
+```
+npm install --save html-imports-content
+```
+
 ## Use
 
 ```html
