@@ -1,6 +1,6 @@
 # html-imports-content
 
-HTML Imports with content inlining, or replacing by selector.
+[HTML Imports] with content inlining, or replacing by selector.
 
 ## Features
 * Enables simple client-side page composition, with support for lazy loading.
@@ -47,14 +47,18 @@ window.importContent(link);
 ## Examples
 * [1](https://rawgithub.com/AndersDJohnson/html-imports-content/master/examples/1/index.html)
 
-## Browser support
+## HTML Imports
+
+### Browser support
 * [Can I use](http://caniuse.com/imports)
 
-## Specs
-* [W3C](http://www.w3.org/TR/2013/WD-html-imports-20130514/)
+### Specs
+* [W3C][HTML Imports]
 
-## Polyfills
+### Polyfills
 * [Polymer](https://github.com/polymer/HTMLImports)
 
 ## Alternatives
-  * [Matthew-Dove/Inject](https://github.com/Matthew-Dove/Inject)
+* [Matthew-Dove/Inject](https://github.com/Matthew-Dove/Inject)
+
+[HTML Imports]: http://www.w3.org/TR/2013/WD-html-imports-20130514/
