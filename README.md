@@ -4,7 +4,7 @@
 
 ## Features
 * Enables simple client-side page composition, with support for lazy loading.
-* Improve speed of web by allowing different HTML snippets to be cached independently. Similar in concept to Edge Side Includes.
+* Improve speed of web by allowing different HTML snippets to be cached independently. Similar in concept to Edge Side Includes (ESI).
 * Declarative definition to encourage future native browser implementation and search engine support.
 
 ## Install
