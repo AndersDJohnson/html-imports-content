@@ -77,5 +77,6 @@ window.importsContent(link);
 
 ## Alternatives
 * [Matthew-Dove/Inject](https://github.com/Matthew-Dove/Inject)
+* [al-scvorets/wm-html-include.js](https://github.com/al-scvorets/wm-html-include.js)
 
 [HTML Imports]: http://www.w3.org/TR/2013/WD-html-imports-20130514/
